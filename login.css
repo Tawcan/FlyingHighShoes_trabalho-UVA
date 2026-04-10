@@ -1,0 +1,38 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#caixa {
+  background-color: #ffbf00;
+  border: 10px solid #cf9c04;
+  box-shadow: 0 4px 8px;
+  border-radius: 15px;
+  width: 320px;
+  text-align: center;
+}
+
+.campo_input {
+  width: 80%;
+  margin: 0 auto 15px auto;
+  text-align: left;
+}
+
+.campo_input input {
+  box-sizing: border-box;
+  border-radius: 100px;
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+#botao_login:hover {
+  background-color: rgba(0, 191, 255, 0.741);
+  color: black;
+  transition: 0.4s;
+}

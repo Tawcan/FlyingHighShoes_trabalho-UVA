@@ -1,0 +1,328 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#logo {
+  width: 50%;
+  text-align: center;
+  border-radius: 100%;
+  margin-top: -64px;
+}
+
+#nike:hover {
+  transition: 0.3s ease;
+  box-shadow: 0 4px 8px rgb(0, 0, 0);
+}
+#adidas:hover {
+  transition: 0.3s ease;
+  box-shadow: 0 4px 8px #006400;
+}
+#puma:hover {
+  transition: 0.3s ease;
+  box-shadow: 0 4px 8px #8b0000;
+}
+
+#icones {
+  margin-left: 88%;
+  margin-top: 50px;
+  display: flex;
+  gap: 9px;
+  width: 5%;
+  cursor: pointer;
+}
+
+#icones img {
+  mix-blend-mode: multiply;
+  display: block;
+}
+
+button {
+  mix-blend-mode: multiply;
+  display: block;
+  box-shadow: 0 2px 4px rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+#promoçoes {
+  text-align: center;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+.card-produto {
+  width: 280px;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card-produto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.imagem-produto {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  height: 200px;
+  object-fit: contain;
+  justify-content: space-between;
+}
+
+.titulo-produto {
+  font-size: 1.2rem;
+  color: #333333;
+  margin: 0 0 10px 0;
+}
+
+.descricao-produto {
+  font-size: 0.9rem;
+  color: #666666;
+  margin-bottom: 15px;
+}
+
+.preco-produto {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #0000ff;
+  margin-bottom: 20px;
+}
+
+.botao-comprar {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 6px;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.botao-comprar:hover {
+  background-color: #218838;
+}
+
+.preco-anterior {
+  text-decoration: line-through;
+}
+
+#chamada {
+  text-align: center;
+  font-style: italic;
+  font-size: larger;
+  background-color: deepskyblue;
+  margin-top: -10px;
+}
+
+#marcas_disponiveis {
+  text-align: center;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+a {
+  text-decoration: none;
+}
+
+#marcas {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 140px;
+  padding: 20px;
+  text-align: center;
+}
+
+#informaçoes {
+  text-align: start;
+  margin-top: 20px;
+}
+
+.sobre {
+  text-align: start;
+  font-size: 14px;
+}
+
+footer input,
+footer textarea {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: sans-serif;
+  display: block;
+  margin-bottom: 10px;
+}
+
+footer textarea {
+  height: 80px;
+  resize: vertical;
+}
+
+.copyright {
+  font-size: 0.8rem;
+  text-align: center;
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
+  margin-top: 20px;
+  color: #666;
+}
+
+.desconto {
+  background-color: red;
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding: 2px 8px;
+  border-radius: 50px;
+  transform: rotate(5deg);
+  display: inline-block;
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -300px;
+  width: 250px;
+  height: 100%;
+  background-color: #ffffff;
+  color: #000000;
+  transition: 0.4s;
+  z-index: 3000;
+  box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+
+.sidebar.active {
+  left: 0;
+  color: solid white;
+}
+
+.sidebar nav a {
+  display: block;
+  color: #000000;
+  padding: 15px 0;
+  font-size: 1.1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #000000;
+}
+
+#btn-fechar {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #000000;
+  cursor: pointer;
+  box-shadow: none;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2500;
+}
+
+.overlay.active {
+  display: block;
+}
+
+.sidebar-carrinho {
+  position: fixed;
+  top: 0;
+  right: -350px;
+  width: 320px;
+  height: 100%;
+  background-color: #ffffff;
+  color: #000000;
+  transition: 0.4s;
+  z-index: 3000;
+  box-shadow: -4px 0 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-carrinho.active {
+  right: 0;
+}
+
+#itens-carrinho {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+.item-no-carrinho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  padding: 15px 0;
+  font-size: 0.95rem;
+}
+
+.item-nome {
+  font-weight: bold;
+  color: #333;
+}
+
+.item-preco {
+  color: #0000ff;
+  font-weight: bold;
+}
+
+.carrinho-footer {
+  padding: 20px;
+  border-top: 1px solid #eee;
+  background-color: #f9f9f9;
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+#btn-fechar-carrinho {
+  background: #f0f0f0;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#itens-carrinho {
+  max-height: 60vh;
+  overflow-y: auto;
+}
